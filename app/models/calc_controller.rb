@@ -1,4 +1,7 @@
 class CalcController < ApplicationController
+  def homepage
+    redirect("/square/new")
+  end 
   def add_form
     render({ :template => "calc_templates/add1" })
   end

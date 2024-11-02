@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get("/") do 
-    redirect("/square/new")
-  end 
+  get("/", {
+    :controller: "calc",
+    :action => "homepage"
+  })
   
   get("/square/new", {
     :controller: "calc",
